@@ -1,4 +1,3 @@
-package finalExamJC;
 import java.util.Scanner;
 public class MainApplication {
 
