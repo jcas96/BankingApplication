@@ -1,6 +1,3 @@
-//Joel Castro (jcastro229@toromail.csudh.edu)
-
-package finalExamJC;
 import java.util.ArrayList;
 import finalExamJC.Transaction.TransactionType;
 
