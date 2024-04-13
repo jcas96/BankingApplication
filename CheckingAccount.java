@@ -1,5 +1,3 @@
-package finalExamJC;
-
 public class CheckingAccount extends Account{
 	
 	public double overdraftLimit;
