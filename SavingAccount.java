@@ -1,5 +1,3 @@
-package finalExamJC;
-
 public class SavingAccount extends Account{
 
 public int overdraftLimit;
