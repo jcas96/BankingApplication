@@ -1,4 +1,3 @@
-package finalExamJC;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.TreeMap;
