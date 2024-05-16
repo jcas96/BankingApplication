@@ -4,6 +4,7 @@ import java.util.TreeMap;
 import java.util.List;
 import java.util.Map;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
@@ -249,14 +250,21 @@ public class Bank {
 		InputStream in=client.getInputStream();
 		
 		//Sending request
-		String request="GET /exchange-rate.csv \r\n";
-		out.write(request.getBytes());
+		//String request="GET /currencies.csv \r\n";
+		String fileName =  "C:/Users/jcastro229/Downloads/currencies.csv";
+		File inputFile = new File("C:/Users/jcastro229/Downloads/currencies.csv");
+		if(!inputFile.exists()) {
+			System.out.printf("Error %s was not found", fileName);
+			System.exit(0);
+		}
 		
-		Reader r=new InputStreamReader(in);
-		BufferedReader br=new BufferedReader(r);
+		//Reader r=new InputStreamReader(inputFile);
+		//BufferedReader br=new BufferedReader(inputFile);
+		Scanner fileReader = new Scanner(inputFile);
 		
 		String line;
-		while((line=br.readLine())!=null) {
+		while(fileReader.hasNext()) {
+			line = fileReader.nextLine();
 			currencyLine=line.split(",");
 			
 			Currency cur=new Currency(currencyLine[0],Double.parseDouble(currencyLine[2]));
