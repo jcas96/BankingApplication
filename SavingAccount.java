@@ -6,7 +6,6 @@ public boolean status;
 
 public SavingAccount(AcctHolder owner, double lim) {
 	super(owner, lim);
-	// TODO Auto-generated constructor stub
 }
 
 	
