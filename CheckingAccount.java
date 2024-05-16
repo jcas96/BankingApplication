@@ -6,7 +6,6 @@ public class CheckingAccount extends Account{
 	
 	public CheckingAccount(AcctHolder owner, double lim) {
 		super(owner,lim);
-		// TODO Auto-generated constructor stub
 	}
 
 	
