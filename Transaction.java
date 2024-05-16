@@ -1,5 +1,5 @@
 public class Transaction {
-    private final int transNumber;
+	private final int transNumber;
     private final double amount;
     private final TransactionType type;
     private static int counter = 1;
