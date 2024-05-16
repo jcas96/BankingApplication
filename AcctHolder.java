@@ -18,7 +18,6 @@ public class AcctHolder {
 		this.lname=l;
 		this.dateOfBirth = dob;
 		this.SSN = SSN;
-		//this.Address = add;
 	}
 	
 	
